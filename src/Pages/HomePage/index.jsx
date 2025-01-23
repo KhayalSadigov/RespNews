@@ -164,13 +164,13 @@ function HomePage() {
                               }}
                             >
                               <div className={styles.cardContent}>
-                                <div className={styles.cardCategory}>
-                                  <div className={styles.content}>
-                                    {e.newsCategory.categoryName && e.newsCategory.categoryName}
-                                  </div>
-                                </div>
                                 <div className={styles.glass}>
                                   <span>{e.newsTitle}</span>
+                                  <div className={styles.cardCategory}>
+                                    <div className={styles.content}>
+                                      {e.newsCategory.categoryName && e.newsCategory.categoryName}
+                                    </div>
+                                  </div>
                                 </div>
                                 <img
                                   src={
