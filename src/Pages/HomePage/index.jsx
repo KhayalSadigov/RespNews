@@ -164,7 +164,7 @@ function HomePage() {
                               }}
                             >
                               <div className={styles.cardContent}>
-                                <div className={styles.category}>
+                                <div className={styles.cardCategory}>
                                   <div className={styles.content}>
                                     {e.newsCategory.categoryName && e.newsCategory.categoryName}
                                   </div>
@@ -204,7 +204,7 @@ function HomePage() {
               </div>
               <div className={styles.more} style={store.news.load == "end" ? {} : { display: 'none' }}>
                 <div className={styles.content}>
-                  Bütün xəbərlər bitdi
+                  {langCheck.endNews[store.lang.data]}
                 </div>
               </div>
             </div>
