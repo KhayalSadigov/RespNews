@@ -256,6 +256,14 @@ function HomePage() {
                   />
                 </div>
               </div>
+              <div className={styles.youtube}>
+                <div className={styles.content}>
+                  <iframe
+                    src={store.youtube.data.length != 0 ? getYouTubeEmbedLink(store.youtube.data[0].videoUrl) : "about:blank"}
+                    frameBorder="0"
+                  ></iframe>
+                </div>
+              </div>
               <div className={styles.topNews}>
                 <div className={styles.content}>
                   <div className={styles.header}>
@@ -300,14 +308,6 @@ function HomePage() {
                       {langCheck.dateSeacrh.search[store.lang.data]}
                     </Button>
                   </form>
-                </div>
-              </div>
-              <div className={styles.youtube}>
-                <div className={styles.content}>
-                  <iframe
-                    src={store.youtube.data.length != 0 ? getYouTubeEmbedLink(store.youtube.data[0].videoUrl) : "about:blank"}
-                    frameBorder="0"
-                  ></iframe>
                 </div>
               </div>
               <div className={styles.categories}>
