@@ -6,7 +6,7 @@ const langCheck = {
   quick: {
     header: ["Sürətli keçid", "Quick link", "Быстрая ссылка"],
     home: ["Ana Səhifə", "Home", "Главная"],
-    categories: ["Kategoriyalar", "Categories", "Категории"],
+    categories: ["Kateqoriyalar", "Categories", "Категории"],
     contact: ["Əlaqə", "Contact", "Контакт"],
     about: ["Haqqımızda", "About us", "О нас"],
   },

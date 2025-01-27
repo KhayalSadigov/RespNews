@@ -49,6 +49,8 @@ header {
         }
       }
       .name {
+        display: flex;
+        gap: 10px;
         img {
           @media screen and (max-width: 480px) {
             width: 100%;

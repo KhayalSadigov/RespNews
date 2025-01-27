@@ -380,34 +380,6 @@ function HomePage() {
                   </Swiper>
                 </div>
               </div>
-              <div className={styles.follow}>
-                <div className={styles.content}>
-                  <span>{langCheck.subscribe.header[store.lang.data]}</span>
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      axios
-                        .post(Base_Url + "/api/subscribers", {
-                          subEmail:
-                            e.target.children[0].children[1].children[0].value,
-                        })
-                        .then(() => {
-                          alert("Successfully");
-                        });
-                    }}
-                  >
-                    <TextField
-                      id="outlined-basic"
-                      type="email"
-                      label={langCheck.subscribe.email[store.lang.data]}
-                      variant="outlined"
-                    />
-                    <Button type="submit" variant="contained">
-                      {langCheck.subscribe.subs[store.lang.data]}
-                    </Button>
-                  </form>
-                </div>
-              </div>
 
             </div>
           </div>

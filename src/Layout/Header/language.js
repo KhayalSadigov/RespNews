@@ -5,7 +5,7 @@ const langCheck = {
     contact: ["Əlaqə", "Contact", "Контакт"],
     about: ["Haqqımızda", "About us", "О нас"],
     search: ["axtar", "search", "поиск"],
-    categories : ["Kategoriyalar" , "Categories" , "Категории"]
+    categories : ["Kateqoriyalar" , "Categories" , "Категории"]
   },
 };
 

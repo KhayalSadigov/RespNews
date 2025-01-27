@@ -16,13 +16,13 @@ function Header() {
           <div className={styles.responseLogo}>
             <div className={styles.photo}>
               <img
-                src="./../images/LogoPhoto.jpeg"
+                src="./../images/LogoPhoto.png"
                 alt="Haydar Aliyev"
               />
             </div>
             <div className={styles.photo}>
               <img
-                src="./../images/LogoPhoto2.jpeg"
+                src="./../images/LogoPhoto2.png"
                 alt="Ilham Aliyev"
               />
             </div>
@@ -30,16 +30,17 @@ function Header() {
           <div className={styles.content}>
             <div className={styles.photo}>
               <img
-                src="./../images/LogoPhoto.jpeg"
+                src="./../images/LogoPhoto.png"
                 alt="Haydar Aliyev"
               />
             </div>
             <div className={styles.name}>
+              <img src="./../images/GERB.png" alt="" />
               <img src="./../images/Logo.png" alt="" />
             </div>
             <div className={styles.photo}>
               <img
-                src="./../images/LogoPhoto2.jpeg"
+                src="./../images/LogoPhoto2.png"
                 alt="Ilham Aliyev"
               />
             </div>
@@ -124,8 +125,9 @@ function Header() {
               </ul>
               <form onSubmit={(e) => {
                 e.preventDefault();
-                e.target.children[0].value
-                navigate(`search/search/${e.target.children[0].value}`)
+                let data = e.target.children[0].value
+                e.target.children[0].value = ""
+                navigate(`search/search/${data}`)
 
               }} className={styles.search}>
                 <input

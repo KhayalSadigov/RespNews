@@ -52,7 +52,6 @@ function NewsPage() {
                       navigate(`/search/category/${news.newsCategoryId}`);
                     }}>{news.newsCategory}</span>
                     <span>{news.newsUpdateDate.slice(0, 10)} | {news.newsUpdateDate.slice(11, 16)}</span>
-                    <span>{news.newsOwner.ownerName}</span>
                   </div>
                 </div>
                 <Swiper
