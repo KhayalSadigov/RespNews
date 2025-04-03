@@ -12,8 +12,6 @@ import langCheck from "./language";
 import CircularProgress from "@mui/material/CircularProgress";
 import Base_Url from "../../Constant/base_url";
 import Button from "@mui/material/Button";
-import { TextField } from "@mui/material";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import CategoryModal from "../../Components/CategoryModal";
 
@@ -21,6 +19,7 @@ function HomePage() {
   const navigate = useNavigate();
   let store = useContext(DataContext);
   useEffect(() => {
+    window.scrollTo(0, 0);
     store.route.setData("home");
   }, []);
   function getYouTubeEmbedLink(url) {

@@ -164,6 +164,7 @@ function Header() {
                 >
                   EN
                 </li>
+
                 <li
                   style={
                     store.lang.data == 2
@@ -175,6 +176,18 @@ function Header() {
                   }}
                 >
                   RU
+                </li>
+                <li
+                  style={
+                    store.lang.data == 3
+                      ? { backgroundColor: "black", color: "white" }
+                      : {}
+                  }
+                  onClick={() => {
+                    store.lang.setData(3);
+                  }}
+                >
+                  CHIN
                 </li>
               </ul>
             </div>

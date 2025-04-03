@@ -3,6 +3,7 @@ const langCheck = {
     "| AZƏRBAYCAN MƏZƏNNƏSİ:",
     "| AZERBAIJAN EXCHANGE RATE:",
     "| ВАЛЮТНЫЙ КУРС АЗЕРБАЙДЖАНА:",
+    "| 阿塞拜疆汇率：:",
   ],
 };
 

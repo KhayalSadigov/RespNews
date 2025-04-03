@@ -7,7 +7,7 @@ export const DataContext = createContext("");
 
 function DataProvider({ children }) {
   const [page, setPage] = useState("home");
-  const [language, setLanguage] = useState(0); // AZE - 0 , ENG - 1 , RUS - 2
+  const [language, setLanguage] = useState(0); // AZE - 0 , ENG - 1 , RUS - 2 , CHI - 3
   const [navModal, setNavModal] = useState(false); // Navbar üçün modal
   const [news, setNews] = useState([]); // Xəbər Dataları
   const [dataPage, setDataPage] = useState(0); // Backend pagination

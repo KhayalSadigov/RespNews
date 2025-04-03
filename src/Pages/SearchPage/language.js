@@ -1,5 +1,5 @@
 const langCheck = {
-    showMore: ["Daha çox göstər", "Show more", "Показать больше"],
-}
+  showMore: ["Daha çox göstər", "Show more", "Показать больше", "顯示更多"],
+};
 
-export default langCheck
+export default langCheck;

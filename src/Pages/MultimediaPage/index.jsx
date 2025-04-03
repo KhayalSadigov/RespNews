@@ -13,6 +13,7 @@ function MultimediaPage() {
   const [modal, setModal] = useState(null)
   useEffect(() => {
     store.route.setData('multimedia')
+    window.scrollTo(0, 0);
 
     axios.get(Base_Url + "/api/infographics/0").then((res) => {
       setInf(res.data)
